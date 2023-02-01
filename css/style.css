@@ -1,0 +1,80 @@
+:root {
+    --bodycolor: #08a8a9;
+    --cardcolor: #ffaf00;
+}
+
+@font-face {
+    font-family: Pokefont;
+    src: url('font/design.graffiti.ANDYB.ttf') format('embedded-opentype'),
+        /* Internet Explorer */
+        url('font/design.graffiti.ANDYB.ttf') format('woff2'),
+        /* Super Modern Browsers */
+        url('font/design.graffiti.ANDYB.ttf') format('woff'),
+        /* Pretty Modern Browsers */
+        url('font/design.graffiti.ANDYB.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('font/design.graffiti.ANDYB.ttf') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    background-color: var(--bodycolor);
+}
+
+.card {
+    background-color: var(--cardcolor);
+    width: 100%;
+}
+
+.pokecard {
+    display: flex;
+    justify-content: center;
+    font-family: "Pokefont";
+    margin-bottom: 1rem;
+}
+
+.card-img-top {
+    margin: auto;
+    width: 50%;
+}
+
+/* Details Popup */
+
+.details-popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 46rem;
+    height: 36rem;
+    z-index: 5;
+
+    display: none;
+
+
+    opacity: 0.95;
+}
+
+.details-popup>.col-12>.card {
+    font-family: "Pokefont";
+    font-size: 1.4rem;
+    border: 5px solid var(--bodycolor) !important;
+    border-radius: 10px;
+}
+
+.details-popup .card-title {
+    font-size: 1.6rem;
+}
+
+.detailed-info .col-3 {
+    text-align: center;
+}
+
+.detailed-info .col-3:nth-child(odd) {
+    font-weight: bold;
+}
+
+.detailed-info .col-3:nth-child(odd)::after {
+    content: ':';
+}
