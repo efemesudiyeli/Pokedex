@@ -15,13 +15,14 @@
 
 <body>
     <header>
-        <nav class="nav justify-content-center  ">
-            <a class="nav-link active" href="#" aria-current="page">Active link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled link</a>
+        <nav class="nav navbar navbar-light justify-content-center align-content-center fixed-top ">
+            <a class="navbar-brand" href="#">Pokedex</a>
+            <a class="nav-link" href="#">Github</a>
+            <a class="nav-link" href="#">awokendev</a>
+
         </nav>
     </header>
-    <main>
+    <main id="scrollUpAnch" class="mb-5">
 
         <!-- Pokedex -->
         <div class="pokedex row align-items-center mx-0 my-3">
@@ -42,21 +43,31 @@
 
 
     </main>
-    <footer>
-        <div class="container-fluid bg-dark">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" aria-current="page">Active link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled link</a>
-                </li>
-            </ul>
+    <a class="scrollUp" href="#scrollUpAnch">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <a class="scrollDown" href="#scrollAnch">
+        <i class="fa-solid fa-angle-down"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer id="scrollAnch" class="bg-dark text-center text-white mt-5">
+
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 awokendev
+
         </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+    <!-- Scroll Down -->
+
+
+
+    <!-- Scroll Down End -->
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
@@ -67,6 +78,7 @@
         </script>
 
     <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/f0e56f76de.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

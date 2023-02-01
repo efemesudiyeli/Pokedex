@@ -1,6 +1,9 @@
 :root {
-    --bodycolor: #08a8a9;
-    --cardcolor: #ffaf00;
+    --bodycolor: #242222;
+    --cardcolor: #333232;
+    --fontcolor: #fff;
+    --navcolor: rgb(255, 61, 61);
+
 }
 
 @font-face {
@@ -17,13 +20,45 @@
     /* Legacy iOS */
 }
 
+main {
+    margin-top: 4.6rem;
+}
+
 body {
     background-color: var(--bodycolor);
+    color: var(--fontcolor);
 }
+
+.nav {
+    background-color: var(--navcolor)
+}
+
+.nav a {
+    color: rgb(231, 231, 231);
+}
+
+.nav a:hover {
+    color: rgb(226, 226, 226);
+}
+
 
 .card {
     background-color: var(--cardcolor);
     width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-title::first-letter {
+    text-transform: capitalize;
+
+}
+
+.card-text::first-letter {
+    text-transform: capitalize;
+
 }
 
 .pokecard {
@@ -77,4 +112,54 @@ body {
 
 .detailed-info .col-3:nth-child(odd)::after {
     content: ':';
+}
+
+.footer {
+    z-index: 67;
+}
+
+.scrollDown {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+
+    border-radius: 50%;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+
+}
+
+.scrollUp {
+    color: white;
+    height: 5rem;
+    width: 5rem;
+
+    border-radius: 50%;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+
+}
+
+.fa-angle-down {
+
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+
+}
+
+.fa-angle-up {
+
+    font-size: 3rem;
+    position: fixed;
+    bottom: 3.5%;
+    right: 1%;
+
 }

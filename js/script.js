@@ -140,29 +140,22 @@ async function showDetails(pokemonDetails) {
 
 }
 
-document.body.addEventListener('click', async (e) => {
+document.querySelector('main').addEventListener('click', async (e) => {
     if (e.target.id == 'details') {
 
         let pokemonDetails = await getPokemonDetails(e.target.getAttribute('data-pokeid'))
         console.log(pokemonDetails)
-
-
-
-
         showDetails(pokemonDetails)
-
 
 
     }
     e.preventDefault()
 })
 
-document.body.addEventListener('click', async (e) => {
+document.querySelector('main').addEventListener('click', async (e) => {
     if (e.target.id == 'close') {
 
         detailsPopupRow.style.display = 'none';
-
-
 
     }
     e.preventDefault()
